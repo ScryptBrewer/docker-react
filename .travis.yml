@@ -3,9 +3,9 @@ services:
   - docker
 
 before_install:
-  - docker build -t ScryptBrewer/docker-react -f Dockerfile.dev .
+  - docker build -t scryptbrewer/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true ScryptBrewer/docker-react npm run test
+  - docker run -e CI=true scryptbrewer/docker-react npm run test
 
 language: generic
